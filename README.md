@@ -30,9 +30,9 @@ foto de uma planta real, para analisar qual será a imagem REAL (Natural) e qual
 ## 🤖 Tecnologias Utilizadas
 Liste as Liste as IAs Generativas e outras ferramentas usadas;
 Chat GPT 4 - Para Analise da imagens
-Leonard.AI - Para geraçao da imagem a ser analisada
+Leonard.AI - Para geraçao da imagem a serem analisada
 Cloud 3 Sonet - Para analise das descricao e imagens 
-AWS Stable Difusion Generativas e outras ferramentas usadas como Google Leans.
+AWS Stable Difusion Generativas e outras ferramentas usadas como Google Leanse GitHub.
 
 ## 🧐 Processo de Criação
 Descreva como você criou o conteúdo
@@ -143,6 +143,7 @@ percent_difference
 ```
 
 ### Conclusão
+
 Com base na análise visual e quantitativa, podemos afirmar que a primeira imagem (`IMG_20240605_154953_1.jpg`) é a real e a segunda imagem (`Default_Dracaena_is_a_botanical_neem_belonging_to_the_Dracenac_2.jpg`) é a gerada por inteligência artificial. 
 
 O percentual de diferença de aproximadamente 42.12% reflete as diferenças significativas nas características visuais entre as duas imagens.
