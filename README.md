@@ -21,17 +21,17 @@ Olá pessoal, Venilton da DIO aqui! Inspirado na hype _"Natty or Not"_ do fisicu
 
 ```markdown
 # Título do Projeto Extremamente Aesthetic ;)
-Imagem Real vs IA (Nery vs Fake)
+Imagem Real vs IA Natural ou Fake Natty
 
 ## 📒 Descrição
 Verificaçao de uma imagem de uma planta criada pela IA, em comparacao com uma
-foto de uma planta real, para analisar qual será a imagem REAL e qual a imagem da  planta Gerada pela IA.jeto
+foto de uma planta real, para analisar qual será a imagem REAL (Natural) e qual a imagem da  planta Gerada pela IA (Fake Netty)
 
 ## 🤖 Tecnologias Utilizadas
 Liste as Liste as IAs Generativas e outras ferramentas usadas;
 Chat GPT 4 - Para Analise da imagens
 Leonard.AI - Para geraçao da imagem a ser analisada
-Cloud 3 - Para analise de imagens 
+Cloud 3 Sonet - Para analise das descricao e imagens 
 AWS Stable Difusion Generativas e outras ferramentas usadas como Google Leans.
 
 ## 🧐 Processo de Criação
@@ -150,9 +150,10 @@ O percentual de diferença de aproximadamente 42.12% reflete as diferenças sign
 ## 💭 Reflexão (Opcional)
 Comente sobre o desafio de criar algo 'natty' com IA.
 O desafio é extremamente desafiador, pois envolve várias etapas e escolhas das ferramentas a serem uilizadas,
-Isso me deixou bastante curioso quanto a como as IA's fariam todo processo, reflentindo sobre este processo,
-o quanto evoluimos, pois um processo e gastaria antes um tempo considerável de análise e processamento, foi
-executado em muito pouco tempo.E fica a reflexao,  quais serao os proximos recursos que as Ia's ganharao em um futuro próximo?
+Isso me deixou bastante curioso como as IA's fariam todo processo, reflentindo sobre este processo,penso 
+o quanto evoluimos,e ainda sera toda essa evolucao de IA's, pois em um processo antes dessas I'As seria gasto  um tempo considerável de análise e processamento, 
+e tudo isso foi executado em muito pouco tempo.
+ Fica aqui minha  reflexao,  quais serao os proximos recursos que as Ia's ganharao em um futuro próximo e como lidaremos com essas IA's ?
 
 ```
 
