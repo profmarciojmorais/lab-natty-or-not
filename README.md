@@ -29,10 +29,10 @@ foto de uma planta real, para analisar qual será a imagem REAL e qual a imagem 
 
 ## 🤖 Tecnologias Utilizadas
 Liste as Liste as IAs Generativas e outras ferramentas usadas;
-Chat GPT 4 - Para coparaçao
+Chat GPT 4 - Para Analise da imagens
 Leonard.AI - Para geraçao da imagem a ser analisada
 Cloud 3 - Para analise de imagens 
-AWS Stable Difusion Generativas e outras ferramentas usadas
+AWS Stable Difusion Generativas e outras ferramentas usadas como Google Leans.
 
 ## 🧐 Processo de Criação
 Descreva como você criou o conteúdo
@@ -85,6 +85,67 @@ percent_difference
 ################################################################################################################################################################################# 🚀 Resultados
 Apresente os resultados do seu projeto
 Com base na análise visual e quantitativa, podemos afirmar que a primeira imagem (IMG_20240605_154953_1.jpg) é a real e a segunda imagem (Default_Dracaena_is_a_botanical_neem_belonging_to_the_Dracenac_2.jpg) é a gerada por inteligência artificial. O percentual de diferença de aproximadamente 42.12% reflete as diferenças significativas nas características visuais entre as duas imagens. ​
+
+Após realizar a análise comparativa das duas imagens, aqui estão os resultados:
+
+### Visualização das Imagens
+- **Imagem 1**: (Real)
+  - Características: Folhas variegadas com listras verdes e brancas/amareladas, vaso preto, fundo com azulejos.
+  - Arquivo: `IMG_20240605_154953_1.jpg`
+  
+- **Imagem 2**: (Gerada por IA)
+  - Características: Folhas totalmente verdes, vaso branco, fundo com parede de tijolos.
+  - Arquivo: `Default_Dracaena_is_a_botanical_neem_belonging_to_the_Dracenac_2.jpg`
+
+### Análise e Percentual de Diferença
+Foi calculado o percentual de diferença entre as duas imagens usando a média das diferenças absolutas entre os pixels correspondentes das imagens redimensionadas. O percentual de diferença obtido é de aproximadamente **42.12%**.
+
+### Código Utilizado
+Abaixo está o código utilizado para carregar, comparar e calcular o percentual de diferença entre as imagens:
+
+```python
+from PIL import Image
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load the images
+real_image_path = "/mnt/data/IMG_20240605_154953_1.jpg"
+ai_image_path = "/mnt/data/Default_Dracaena_is_a_botanical_neem_belonging_to_the_Dracenac_2.jpg"
+
+real_image = Image.open(real_image_path)
+ai_image = Image.open(ai_image_path)
+
+# Display the images side by side for visual comparison
+fig, axs = plt.subplots(1, 2, figsize=(15, 10))
+
+axs[0].imshow(real_image)
+axs[0].set_title("Real Image")
+axs[0].axis('off')
+
+axs[1].imshow(ai_image)
+axs[1].set_title("AI Generated Image")
+axs[1].axis('off')
+
+plt.show()
+
+# Resizing the images to the same dimensions for accurate comparison
+ai_image_resized = ai_image.resize(real_image.size)
+
+# Convert images to numpy arrays for detailed comparison
+real_image_array = np.array(real_image)
+ai_image_array_resized = np.array(ai_image_resized)
+
+# Calculate differences
+difference = np.abs(real_image_array - ai_image_array_resized)
+percent_difference = np.mean(difference) / 255 * 100
+
+percent_difference
+```
+
+### Conclusão
+Com base na análise visual e quantitativa, podemos afirmar que a primeira imagem (`IMG_20240605_154953_1.jpg`) é a real e a segunda imagem (`Default_Dracaena_is_a_botanical_neem_belonging_to_the_Dracenac_2.jpg`) é a gerada por inteligência artificial. 
+
+O percentual de diferença de aproximadamente 42.12% reflete as diferenças significativas nas características visuais entre as duas imagens.
 
 ## 💭 Reflexão (Opcional)
 Comente sobre o desafio de criar algo 'natty' com IA.
